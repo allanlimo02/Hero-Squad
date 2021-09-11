@@ -8,6 +8,8 @@ public class App {
         // Homepage route.
         get("/sampleoutput", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
+
+
             String heroName = request.queryParams("heroName");
             int heroAge = Integer.parseInt(request.queryParams("heroAge"));
             String specialPower = request.queryParams("specialPower");

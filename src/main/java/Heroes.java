@@ -1,12 +1,12 @@
 import org.sql2o.Sql2oException;
 
-public class Declarations {
+public class Heroes {
     private String  name;
     private String superpower1;
     private String superpower2;
 
     // constructor to create a new super hero
-    public Declarations(String name, String superpower1, String superpower2) {
+    public Heroes(String name, String superpower1, String superpower2) {
         this.name = name;
         this.superpower1 = superpower1;
         this.superpower2 = superpower2;
@@ -37,5 +37,6 @@ public class Declarations {
         this.superpower2 = superpower2;
     }
     // Functions to push user input to the database;
+
 
 }
