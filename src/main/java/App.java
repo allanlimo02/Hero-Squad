@@ -8,6 +8,14 @@ public class App {
         // Homepage route.
         get("/sampleoutput", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
+            String heroName = request.queryParams("heroName");
+            int heroAge = Integer.parseInt(request.queryParams("heroAge"));
+            String specialPower = request.queryParams("specialPower");
+            String weakness = request.queryParams("weakness");
+            model.put("heroName", heroName);
+            model.put("heroAge", heroAge);
+            model.put("specialPower",specialPower);
+            model.put("weakness",weakness);
             return new ModelAndView(model, "sampleoutput.hbs");
         }, new HandlebarsTemplateEngine());
         //form route
