@@ -1,5 +1,5 @@
 package modules;
 
-public class mainDAO {
+public interface mainDAO {
 
 }
