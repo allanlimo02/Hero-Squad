@@ -6,11 +6,15 @@ import static spark.Spark.*;
 public class App {
     public static void main(String[] args) {
         // Homepage route.
+//        get("/", (request, response) -> {
+//            Map<String, Object> model = new HashMap<String, Object>();
+//            return new ModelAndView(model, "index.hbs");
+//        }, new HandlebarsTemplateEngine());
+        //form route
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            return new ModelAndView(model, "index.hbs");
+            return new ModelAndView(model, "userInput.hbs");
         }, new HandlebarsTemplateEngine());
-        //
 
     }
 }
