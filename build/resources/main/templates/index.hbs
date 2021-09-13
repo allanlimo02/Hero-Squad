@@ -1,18 +1,33 @@
 {{#partial "content"}}
 <div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<p><br><br><br><br><br>
-						<h3 class="text-justify">HERO SQUAD</h3>
-					</p><br><br><br><br><br>
-					<button class="btn btn-success" ><a href="/userinput" class="text-white">Create a new Hero</a></button>
-					<br><br>
-				</div>
-				<div class="col-md-6">
-					<p class="text-justify"><h2>View existing heroes</h2></p>
-				</div>
-			</div>
+{{!-- 			<div class="row"> --}}
+{{!-- 				<div class="col-md-6"> --}}
+{{!-- 					<p><br><br><br><br><br> --}}
+{{!-- 						<h3 class="text-justify">HERO SQUAD</h3> --}}
+{{!-- 					</p><br><br><br><br><br> --}}
+{{!-- 					<button class="btn btn-success" ><a href="/userinput" class="text-white">Create a new Hero</a></button> --}}
+{{!-- 					<br><br> --}}
+{{!-- 				</div> --}}
+{{!-- 				<div class="col-md-6"> --}}
+{{!-- 					<p class="text-justify"><h2>View existing heroes</h2></p> --}}
+{{!--                              Output arraylist--}} --}}
+
+{{!-- 				</div> --}}
+{{!-- 			</div>  --}}
+       <h1>Post list!</h1>
+
+       {{#if instances}}
+           {{#each posts }}
+            <p>Current post:</p>
+            <p>{{ content }}</p> <!--show-->
+           {{/each}}
+       {{else}} <!--no posts!-->
+        <p>No posts!</p>
+       {{/if}}
 		</div>
+            <br><br><br>
+       <a href="/userInput"><button type="reset" class="btn btn-danger">Create a new Hero</button></a>
+
 {{/partial}}
 
 {{> layout.hbs}}
