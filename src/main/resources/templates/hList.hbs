@@ -6,23 +6,30 @@
     {{#if heroes}}
         <p>Current heroes</p>
         {{#each heroes }}
-    <span class="hero-style">
 
-        <p>Hurray!!</p>
-             <p> Name: {{name}} </p>
-             <p>Age:{{age}} </p>
-             <p>Power: {{ power }}</p>
-             <p>Weakness: {{ weakness }}</p>
+    <span class="hero-style" style="border: solid black 2px; border-radius: 15px;">
+
+            <div class="card" style="width: 18rem;">
+            	<div class="card-body">
+            	  <h5 class="card-title">Name: {{name}}</h5>
+            	  <p class="card-text">
+            	            <p>Age:{{age}} </p>
+                            <p>Power: {{ power }}</p>
+                            <p>Weakness: {{ weakness }}</p>
+            	  </p>
+            	</div>
+              </div>
+
     </span>
         {{/each}}
 
     {{else}} <!--no posts!-->
-    <p>No Heros!</p>
+    <p>Opps! No Heroes to display!</p>
     {{/if}}
-
-    <a href="/heroes/new"> Add a Hero</a>
-    <br>
-    <a href="/"> Go to Home Page</a>
+     <a href="/heroes/new" class="btn btn-primary">Create a Hero</a>
+    <br><br><br>
+    <a href="/" class="btn btn-success">Go to Home Page </a>
+<br><br>
 
 
 {{/partial}}
