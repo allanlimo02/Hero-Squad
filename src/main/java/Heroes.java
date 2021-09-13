@@ -19,34 +19,39 @@ public class Heroes {
     }
 
     public String getName() {
+
         return mName;
     }
 
 
     public String getAge() {
+
         return mAge;
     }
 
     public String getPower() {
+
         return mPower;
     }
 
     public String getWeakness() {
-        return mWeakness;
+        return
+                mWeakness;
     }
 
     public static ArrayList<Heroes> all() {
+
         return instances;
     }
 
     public static void clear(){
+
         instances.clear();
     }
 
     public int getmId() {
+
         return id;
     }
-    public static Heroes find(int id) {
-        return instances.get(id - 1);
-    }
+
 }

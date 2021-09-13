@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Heroes & Heroines {{/block}}</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+<body>
+
+<div class="container">
+    <!--begin main template-->
+
+
+    <div class="col-md-12">
+        {{#block "content"}}
+
+        {{/block}}
+
+    </div>
+</div>
+<!--end main template-->
+{{#block "footer"}}
+    <footer class="footer">
+        <div class="row h-50 bg-primary text-white">
+            <div class="col-md-4">
+        <h2>Hero Weekend Project</h2>
+            </div>
+            <div class="col-md-4">
+                <h2>Developed by Allan Limo</h2>
+            </div>
+            <div class="col-md-4">
+                        <h2>Developed for <a href="https://moringaschool.com">Moringa school</a></h2>
+            </div>
+          </div>
+    </footer>
+    </body>
+    </html>
+{{/block}}
